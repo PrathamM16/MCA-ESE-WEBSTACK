@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jokes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="jokes.xsd">
+  <joke>
+    <category>Programming</category>
+    <content>Why don't scientists trust atoms? Because they make up everything!</content>
+  </joke>
+  
+  <joke2>
+    <category>Animal Crossing</category>
+    <content>Parallel lines have so much in common. It's a shame they'll never meet. </content>
+  </joke2>
+  <joke3>
+    <category>Religion</category>
+    <content> I used to play piano by ear, but now I use my hands.</content>
+  </joke3>
+  
+  <joke4>
+    <category> Political </category>
+    <content> Did you hear about the mathematician who's afraid of negative numbers? He'll stop  at nothing to avoid them.</content>
+  </joke4>
+  <joke5>
+    <category>Food </category>
+    <content>What do you call a fish with no eyes? Fsh. </content>
+  </joke5>
+  
+  <joke6>
+    <category>Geography  </category>
+    <content>I'm on a seafood diet. I see food, and I eat it. </content>
+  </joke6>
+  <joke7>
+    <category>Celebrity</category>
+    <content>Why did the scarecrow win an award? Because he was outstanding in his </content>
+  </joke7>
+  
+  <joke8>
+    <category>Spooky</category>
+    <content>What's orange and sounds like a parrot? A carrot. 
+</content>
+  </joke8>
+  <joke9>
+    <category>Celebrity</category>
+    <content>Why did the scarecrow win an award? Because he was outstanding in his </content>
+  </joke9>
+  
+  <joke10>
+    <category>Spooky</category>
+    <content>What's orange and sounds like a parrot? A carrot. 
+</content>
+  </joke10>
+</jokes>

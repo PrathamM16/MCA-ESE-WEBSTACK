@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jokes</title>
+    
+</head>
+
+<body>
+    
+    <h1>Jokes</h1>
+    <div id="jokes"></div>
+
+    <script>
+        fetch('jokes.json')
+            .then(response => response.json())
+            .then(data => {
+                const jokesDiv = document.getElementById('jokes');
+                data.forEach(joke => {
+                    const jokeElement = document.createElement('p');
+                    jokeElement.textContent = joke.Joke;
+                    jokesDiv.appendChild(jokeElement);
+                });
+            })
+            .catch(error => console.log(error));
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <form id="1">
+        <h2>Category:</h2><p>Programming</p>
+        <h2>Joke:</h2><p>Why don't scientists trust atoms? Because they make up everything!</p>
+        <h2>Category:</h2><p>Animal Crossing</p>
+        <h2>Joke:</h2><p>Parallel lines have so much in common. It's a shame they'll never meet. </p>
+        <h2>Category:</h2><p>Religion</p>
+        <h2>Joke:</h2><p>I used to play oiano by ear, but now i use my hands</p>
+        <h2>Category:</h2><p>Political </p>
+        <h2>Joke:</h2><p>Did you hear about the mathematician who's afraid of negative numbers? He'll stop  at nothing to avoid them. </p>
+        <h2>Category:</h2><p>Food </p>
+        <h2>Joke:</h2><p>What do you call a fish with no eyes? Fsh. </p>
+        <h2>Category:</h2><p>Geography</p>
+        <h2>Joke:</h2><p>I'm on a seafood diet. I see food, and I eat it.  </p>
+        <h2>Category:</h2><p>Celebrity</p>
+        <h2>Joke:</h2><p>Why did the scarecrow win an award? Because he was outstanding in his field! </p>
+        <h2>Category:</h2><p>Spooky</p>
+        <h2>Joke:</h2><p>What's orange and sounds like a parrot? A carrot</p>
+        <h2>Category:</h2><p>Miscellaneous </p>
+        <h2>Joke:</h2><p> How do you organize a space party? You "planet"!  </p>
+        
+
+    </form>
+</body>
+</html>

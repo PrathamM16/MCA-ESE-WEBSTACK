@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form Validation</title>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            
+            var errorMessage = "";
+            if (name.trim() === "") {
+                errorMessage += "Name is required.\n";
+            }
+            if (email.trim() === "") {
+                errorMessage += "Email is required.\n";
+            } else if (!emailRegex.test(email)) {
+                errorMessage += "Invalid email format. Example:Name@gmail.com\n";
+            }
+            
+
+            if (errorMessage !== "") {
+                alert(errorMessage);
+                return false;
+            }
+
+            return true; 
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c72020;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #00aaff, #00ffaa);
+        }
+        h1 {
+            font-size: 48px; 
+            text-transform: uppercase;
+            animation: dance 4s infinite linear;
+            display: inline-block;
+            text-align: center;
+            color: #900a0a;
+        }
+        
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1> FEEDBACK FORM WITH VALIDATIONS</h1>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" onkeydown="return/[a-z,SP]/i.test(event.key)"><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+
+
+       <label for="comment">Comment:</label>
+       <input id="comment" name="comment" placeholder="Write something.." maxlength="160" onkeydown="return/[0-9-a-z ]/i.test(event.key)"/ style="height:200px" width="300px" >
+
+
+        
+        <input type="Submit" value="Submit" class="submit-btn" height="100">
+        
+    </form>
+</body>
+</html>
